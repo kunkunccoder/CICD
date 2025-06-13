@@ -17,7 +17,8 @@ jobs:
       # - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: pwd
       - run: ls -l
-      - run: cd CICD
+      - run: cd ./CICD/
+      - run: pwd
       - run: ls -l
       - name: Build exe
         run: g++ -o main main.cpp
