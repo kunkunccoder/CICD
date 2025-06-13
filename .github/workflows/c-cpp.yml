@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: pwd
       - run: ls -l
-      - run: git clone https://github.com/kunkunccoder/CICD.git
+      - run: git clone git@github.com:kunkunccoder/CICD.git
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
