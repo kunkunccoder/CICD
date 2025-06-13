@@ -15,6 +15,7 @@ jobs:
       #   run: |
       #     ls ${{ github.workspace }}
       # - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: git clone git@github.com:kunkunccoder/CICD.git
       - run: pwd
       - run: ls -l
       - run: cd ./CICD/
