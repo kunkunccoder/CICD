@@ -5,8 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: [linux]
     steps:
-      - run: pwd
-      - run: git clone https://github.com/kunkunccoder/CICD.git
+      # - run: pwd
+      # - run: git clone https://github.com/kunkunccoder/CICD.git
       # - name: Check out repository code
       #   uses: actions/checkout@v4
       # - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
@@ -17,6 +17,7 @@ jobs:
       # - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: pwd
       - run: ls -l
+      - run: cd CICD
       - name: Build exe
         run: g++ -o main main.cpp
       - run: ./main
