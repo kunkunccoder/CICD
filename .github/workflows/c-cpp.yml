@@ -16,6 +16,8 @@ jobs:
       #   run: |
       #     ls ${{ github.workspace }}
       # - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: pwd
+      - run: ls -l
       - name: Build exe
         run: g++ -o main main.cpp
       - run: ./main
