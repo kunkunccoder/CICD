@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: [linux]
     steps:
-      # - run: pwd
+      - run: pwd
       # - run: git clone https://github.com/kunkunccoder/CICD.git
       # - name: Check out repository code
       #   uses: actions/checkout@v4
